@@ -17,11 +17,17 @@ class Vector:
     def _length(self):
         return sum([c**2 for c in self.nums]) ** 0.5
 
-'''
     def unit_vector(self):
-        return Vector([v/self.len for v in self.nums])
+        return Vector([v/self.norm for v in self.nums])
         #print(self.nums)
 
+    def scale_vector(self,scalar):
+        return Vector ([scalar*v for v in self.nums])
+
+    def __eq__(self, other):
+        return self.nums == other.nums    
+
+'''
     def dot(self, v1):
         if v1.dims != self.dims:
             return "Vectors are not of the same length."
