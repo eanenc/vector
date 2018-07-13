@@ -7,4 +7,4 @@ def test_make_vector():
 
 def test_norm():
     v = Vector([3,4])
-    assert v.norm == 7
+    assert v.norm == 5
