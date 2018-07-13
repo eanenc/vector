@@ -1,3 +1,4 @@
 [
-  "test/test_vector.py::test_make_vector"
+  "test/test_vector.py::test_make_vector",
+  "test/test_vector.py::test_norm"
 ]
